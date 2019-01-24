@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: 13px;
+    background-color: #ffffff;
+    color: #000000;
+    position: relative;
+}
+a {
+    color: #003366;
+}
+img {
+    border: 0;
+}
+.warning, .messages {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+.validerror, .error {
+    color: red;
+    font-size: 90%;
+    display: block;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    text-align: left;
+    margin: 0 auto;
+}
+#min_width {
+    display: none;
+}
+* html #min_width {
+    display: block;
+    width: 710px;
+    height: 40px;
+    margin-top: -40px;
+}
+.container {
+    width: 710px;
+    height: 480px;
+    margin-left: 5px;
+}
+.logo {
+    float: left;
+}
+.support {
+    float: right;
+    padding-right: 35px;
+}
+.support-text {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #818181;
+}
+.support-phone {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #fe5800;
+}
+.content {
+    padding: 10px;
+    min-height:290px;
+    height:auto !important;
+    height:290px;
+}
+.content_header {
+    margin-bottom: 10px;
+    padding-top: 5px;
+    font-size: 23px;
+    color: #fe5800;
+}
+.text_header {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+.text_footnote {
+    font-size: 85%;
+    margin-top: 10px;
+}
+.service_items {
+    margin: 15px 5px 10px 5px;
+}
+.service_item {
+    float: left;
+    margin: 0 5px 10px 5px;
+}
+.postfooter {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: 1px solid #b1e8fa;
+}
+.postfooter div {
+    display: inline;
+    margin-right: 10px;
+}
+.logo_cards {
+    float: left;
+    padding-left: 10px;
+    width: 480px;
+}
+.logo_cards img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.logo_right {
+    float: right;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.links {
+    clear: both;
+    padding: 8px 0 0 18px;
+}
+.links span {
+    margin-right: 10px;
+}
+.links a {
+    font-weight: bold;
+    color: #818181;
+}
+.button-back {
+    background: transparent url(button-back-ru.png) no-repeat 0 0;
+    width: 100px;
+    height: 55px;
+    cursor: pointer;
+    border: 0;
+}
+.button-next {
+    background: transparent url(button-pay-ru.png) no-repeat 0 0;
+    width: 120px;
+    height: 36px;
+    cursor: pointer;
+    border: 0;
+}
+div.valid{
+    background: url(ok.gif) 100% 2.75em no-repeat;
+}
+.errors_header, .messages_header {
+    background: #ffdfdf;
+    border: 1px solid #f3afb5;
+    margin: 0 0 1.5em 0;
+    padding: 0 1.5em;
+}
+.errors_header div, .messages_header div {
+    margin: 0;
+    padding: 7px;
+    position: relative;
+}
+.provider_title {
+    float: left;
+}
+.provider_logo {
+    float: right;
+}
+.step {
+    margin: 5px 15px 10px 5px;
+}
+.step_pos {
+    font-size: 17px;
+    color: #818181;
+}
+.step_info {
+    margin-left: 2px;
+    color: #777777;
+    font-size: 12px;
+}
+.adv_text_info {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+    font-size: 20px;
+}
+.adv_text_info span {
+    color: red;
+}
+.content_warning_message {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+.cell_left {
+    float: left;
+}
+.cell_right {
+    float: right;
+}
+.content_desc {
+    text-align: center;
+    font-size: 11px;
+    color: #c5c5c5;
+}
+#scrollbar1 {
+    width: 703px;
+    margin: 10px 0 10px;
+}
+#scrollbar1 .viewport {
+    width: 670px;
+    height: 310px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 5px;
+    border: 1px solid #ebebeb;
+}
+#scrollbar1 .overview {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+#scrollbar1 .scrollbar {
+    background: transparent url(bg-scrollbar-track-y.png) no-repeat 0 0;
+    position: relative;
+    float: right;
+    width: 10px;
+}
+#scrollbar1 .track {
+    background: transparent url(bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height: 100%;
+    width: 12px;
+    position: relative;
+}
+#scrollbar1 .thumb {
+    background: transparent url(bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height: 50px;
+    width: 10px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 1px;
+    top: 0;
+    left: 0;
+}
+#scrollbar1 .thumb .end {
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent url(bg-scrollbar-thumb-y.png) no-repeat 50% 0;
+    margin-top: -3px;
+    height: 50px;
+    width: 10px;
+}
+#scrollbar1 .disable {
+    display: none;
+}
+.noSelect {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.ctrlHolder {
+    padding: 0.5em 0.5em 0 0;
+}
+.ctrlHolder strong {
+    color: #000000;
+}
+.textInput {
+    padding: 4px 2px;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+

@@ -1,0 +1,48 @@
+body
+{
+    text-align: center;
+}
+
+.container
+{
+    text-align: left;
+}
+
+.form_block.cols3 .col .btn_wrap a
+{
+    height: 44px;
+}
+
+.form_block.cols3 .col .btn_wrap span
+{
+    height: 44px !important;
+}
+
+.form_block.cols1.center .col1 .mid
+{
+    width: 474px;
+}
+
+
+
+.content dl
+{
+    margin-top: 15px;
+}
+
+.content dl dd
+{
+    width: 721px;
+}
+
+.content dl.plain dd
+{
+    width: 400px;
+}
+
+
+.cols2 .col2
+{
+    float: right;
+    width: 100px !important;
+}

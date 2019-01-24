@@ -1,0 +1,1 @@
+<document><merchant cert_id="00C182B189" name="Test shop"><order order_id="000037" amount="31080.00" currency="398"><department merchant_id="92061101" amount="31080.00"/></order></merchant><merchant_sign type="RSA">RdiiobPdAa7gCjuWtZf3moVHaoJ8m4iYSJFHUEecGPv5hbFLTFBcnDQW5QpyMDDvwcx2FmTeTJBEp5uvjMhASQ==</merchant_sign></document>

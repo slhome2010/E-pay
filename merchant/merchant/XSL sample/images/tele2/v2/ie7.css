@@ -1,0 +1,65 @@
+﻿hr
+{
+	height: 0;
+}
+
+form
+{
+	margin: 0;
+}
+
+.form_block.cols3 .col .btn_wrap span
+{
+    height: 36px;
+    padding: 8px 0 0 19px;
+}
+
+.form_block .inp input
+{
+	float: left;
+}
+
+.form_block .chb
+{
+	margin: -6px 0 0 0;
+}
+
+.form_block .chb input
+{
+	position: relative;
+	left: -4px;
+	height: 16px;
+}
+
+.content dl
+{
+	width: 100%;
+	margin-top: 15px;
+}
+
+.content dl.plain dd
+{
+	width: 400px;
+}
+
+
+.form_block.cols2 .col2
+{
+	float: left;
+}
+
+.form_block.cols2.details .col1 fieldset
+{
+	margin-right: 9px;
+}
+
+.form_block.cols2.details .col1 fieldset,
+.form_block.cols2.details .col2 fieldset
+{
+	padding: 5px 7px 10px 0;
+}
+
+.form_block.cols2.details .col2 fieldset
+{
+	float: left;
+}
