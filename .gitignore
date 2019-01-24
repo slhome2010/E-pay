@@ -1,5 +1,6 @@
 assets/*
 !assets/.gitignore
+
 .htaccess
 /config.php
 admin/config.php
