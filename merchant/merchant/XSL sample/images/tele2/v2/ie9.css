@@ -1,0 +1,35 @@
+﻿.form_block .inp input
+{
+	float: left;
+}
+
+.form_block.cols3 .col .btn_wrap span
+{
+	padding: 9px 0 0 19px;
+}
+
+.form_block.cols2 .col2
+{
+	float: left;
+}
+
+.form_block.cols2 .col2
+{
+	float: left;
+}
+
+.form_block.cols2.details .col1 fieldset
+{
+	margin-right: 9px;
+}
+
+.form_block.cols2.details .col1 fieldset,
+.form_block.cols2.details .col2 fieldset
+{
+	padding: 5px 7px 10px 0;
+}
+
+.form_block.cols2.details .col2 fieldset
+{
+	float: left;
+}

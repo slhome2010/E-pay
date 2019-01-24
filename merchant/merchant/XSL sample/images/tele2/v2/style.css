@@ -1,0 +1,426 @@
+﻿html, body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body
+{
+	background: #000 url('bg.png') repeat-x fixed left bottom;
+}
+
+h1, h2, h3, h4, h5, h6, h7
+{
+	margin: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h7 a
+{
+	text-decoration: none;
+}
+
+h1, h1 a
+{
+	color: #38393b;
+}
+
+h2, h2 a
+{
+	color: #000;
+}
+
+hr
+{
+	margin: 0;
+	border: 0;
+	border-top: 1px solid #e8e8e8;
+}
+
+#main
+{
+	width: 950px;
+	margin: 0 auto;
+	padding-bottom: 41px;
+}
+
+
+.header
+{
+	height: 137px;
+}
+
+.header .logo
+{
+	background: transparent url('logo_t2.png') no-repeat left top;
+	width: 178px;
+	height: 63px;
+	display: block;
+	margin-top: 53px;
+	float: left;
+}
+
+
+.container .top
+{
+	background: transparent url('title.png') no-repeat left top;
+	height: 22px;
+}
+
+.container .bottom
+{
+	background: transparent url('bottom.png') no-repeat left top;
+	height: 22px;
+}
+
+.container .title
+{
+	background-color: #f3f3f3;
+	min-height: 67px;
+}
+
+.container .title h1
+{
+	padding: 0 26px 15px 26px;
+	font-weight: normal;
+	font-size: 38px;
+}
+
+
+
+.container .content_wrap
+{
+	background: #f3f3f3 url('wrap_bg.png') repeat-x left top;
+	min-height: 86px;
+	padding: 26px 27px 12px 28px;
+}
+
+
+.content_wrap .top
+{
+	background: transparent url('in_top.png') no-repeat left top;
+	height: 22px;
+}
+
+.content_wrap .bottom
+{
+	background: transparent url('in_bottom.png') no-repeat left top;
+	height: 22px;
+}
+
+
+.red
+{
+	color: #f00;
+}
+
+
+.content
+{
+	border-left: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+	background-color: #fff;
+	padding: 8px 31px 0 19px;
+	color: #535e6d;
+}
+
+.content h2
+{
+	font-weight: normal;
+	font-size: 21px;
+}
+
+.content h2 a
+{
+	color: #000;
+}
+
+.content p
+{
+	margin: 11px 0;
+}	
+
+
+
+fieldset
+{
+	border: 0;
+}
+
+fieldset, .form_block, .content p, .content dl
+{
+	font-family: arial;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+fieldset a, .form_block a, .content p a, .content dl  a
+{
+	border-bottom: 2px solid #a9aeb6;
+	text-decoration: none;
+	color: #535e6d;
+}
+
+
+.cols2 .col1 
+{
+	float: left;
+}
+
+.cols2 .col2
+{
+	float: right;
+	width: 100px;
+}
+
+.cols2 .col2 img
+{
+	margin-bottom: 45px;
+}	
+
+
+.form_block.cols3 .col1
+{
+	float: left;
+	width: 370px;
+}
+
+.form_block.cols3 .col2
+{
+	float: left;
+	width: 350px;
+	padding-top: 87px;
+}
+
+.form_block.cols3 .col3
+{
+	float: left;
+	width: 123px;
+}
+
+.form_block.cols3 .col3 img
+{
+	margin-bottom: 45px;
+}
+
+.form_block .split
+{
+	float: left;
+	width: 120px;
+}
+
+.form_block .inp
+{
+	border-top: 1px solid #b2b2b2;
+	border-left: 1px solid #b2b2b2;
+	border-bottom:  1px solid #f9f9f9;
+	float: left;
+}
+
+.form_block .inp input
+{
+	border-top: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	border-bottom:  0;
+	border-right:  0;
+	background: #e3e3e3 url('input.png') repeat-x left top;
+	height: 23px;
+	width: 153px;
+}
+
+
+.form_block.cols2
+{
+	padding-top: 8px;
+}	
+
+.form_block.cols2 .col1
+{
+	float: left;
+	width: 370px;
+}
+
+.form_block.cols2 .col2
+{
+	float: left;
+	width: 473px;
+	padding-top: 7px;
+}
+
+.form_block.cols1.center .col1
+{
+	float: left;
+	left: 50%;
+	position: relative;
+	padding-top: 47px;
+}
+
+.form_block.cols1
+{
+	padding-top: 19px;
+}
+
+.form_block.cols1.center .col1 .mid
+{
+	float: left;
+	left: -50%;
+	position: relative;
+}
+
+
+.form_block.cols1.center .col1 .mid fieldset
+{
+	width: 470px;
+	padding: 0 0 8px 0;
+}
+
+.form_block.cols2.details .col1,
+.form_block.cols2.details .col2
+{
+	padding-top: 0;
+}
+
+.form_block.cols2.details .col1 fieldset
+{
+	width: 340px;
+	float: right;
+	text-align: right;
+}
+
+.form_block.cols2.details .col2 fieldset
+{
+	width: 450px;
+}
+
+.form_block.cols1.center .col1 .mid fieldset label,
+.form_block.cols2.details .col2 fieldset label
+{
+	width: 186px;
+	float: left;
+	height: 27px;
+	line-height: 27px;
+}
+
+.form_block.cols1.center .col1 .mid fieldset .inp input,
+.form_block.cols2.details .col2 fieldset .inp.long input
+{
+	width: 247px;
+}
+
+.form_block.cols1.center .col1 .mid fieldset .inp,
+.form_block.cols1.center .col1 .mid fieldset .chb
+.form_block.cols2.details .col2 fieldset .chb
+{
+	float: left;
+}
+
+.form_block.cols1.center .col1 .mid fieldset .chb input,
+.form_block.cols2.details .col2 fieldset .chb input
+{
+	margin: 5px 7px 0 0;
+	float: left;
+}
+
+.form_block.cols3 .col
+{
+	width: 281px;
+	float: left;
+	padding: 1px 0;
+}
+
+
+.form_block.cols3 .col .btn_wrap.left
+{
+	float: left;
+}
+
+.form_block.cols3 .col .btn_wrap.mid
+{
+	float: left;
+	left: 50%;
+	position: relative;
+}
+
+.form_block.cols3 .col .btn_wrap.mid a,
+.form_block.cols3 .col .btn_wrap.mid input
+{
+	left: -50%;
+	position: relative;
+}
+
+.form_block.cols3 .col .btn_wrap.right
+{
+	float: right;
+}
+
+.form_block.cols3 .col .btn_wrap a,
+.form_block.cols3 .col .btn_wrap span,
+.form_block.cols3 .col .btn_wrap strong,
+.form_block.cols3 .col .btn_wrap input
+{
+	float: left;
+}
+
+.form_block.cols3 .col .btn_wrap a,
+.form_block.cols3 .col .btn_wrap input
+{
+	display: block;
+	border: 0;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: none;
+}
+
+.form_block.cols3 .col .btn_wrap strong
+{
+    background: transparent url("btn_right.png") no-repeat right top;
+    height: 44px;
+    padding: 0;
+    width: 19px;
+	display: block;
+}
+
+.form_block.cols3 .col .btn_wrap span
+{
+    background: transparent url("btn_left.png") no-repeat left top;
+    color: #fff;
+    height: 32px;
+
+    padding: 12px 0 0 19px;
+	display: block;
+}
+
+/*
+.form_block.cols3 .col .btn_wrap input
+{
+	background: transparent url("btn_full.png") no-repeat 50% 50%;
+	color: #fff;
+}
+*/
+
+.content dl
+{
+	float: left;
+}
+
+.content dl dt
+{
+	font-weight: bold;
+	float: left;
+	clear: left;
+	width: 122px;
+}
+
+.content dl.plain dt
+{
+	font-weight: normal;
+	width: 300px;
+}
+
+.content dl dd
+{
+	float: left;
+	margin: 0;
+}

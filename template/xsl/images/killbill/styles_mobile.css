@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: 13px;
+    background-color: #ffffff;
+    color: #000000;
+    position: relative;
+}
+a {
+    color: #003366;
+}
+img {
+    border: 0;
+}
+input {
+    padding: 4px 2px;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+.warning, .messages {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+.validerror, .error {
+    color: red;
+    font-size: 90%;
+    display: block;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    text-align: left;
+    margin: 0 auto;
+}
+#min_width {
+    display: none;
+}
+* html #min_width {
+    display: block;
+    width: 350px;
+    height: 40px;
+    margin-top: -40px;
+}
+.img_bg {
+    text-align: right;
+}
+.container {
+    margin: 0 auto;
+    display: block;
+    width: 350px
+}
+.header {
+    margin-top: 5px;
+}
+.logo_killbill {
+    float: left;
+}
+.logo_epay {
+    float: right;
+    margin-top: 20px;
+}
+.content {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #b1e8fa;
+}
+.content_header {
+    margin-bottom: 10px;
+    font-size: 23px;
+    color: #fe5800;
+}
+.content_text {
+    padding-bottom: 15px;
+}
+.content_text div {
+    margin-bottom: 10px;
+}
+.content_left {
+    float: left;
+    width: 50%;
+}
+.content_right {
+    float: right;
+    width: 48%;
+}
+.amount {
+    font-size: 15px;
+    font-weight: bold;
+}
+.content_text em {
+    color: #fe5800;
+}
+.content_desc {
+    color: #787878;
+}
+.content_info {
+    padding-top: 10px;
+}
+.content_info_header {
+    color: #79a3b0;
+}
+.content_info_header a {
+    color: #79a3b0;
+    text-decoration: none;
+}
+.text_upper {
+    text-transform: uppercase;
+}
+#code_slide {
+    cursor: pointer;
+}
+.buttons {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.buttons span {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.button-reset, .button-back {
+    padding: 10px 22px;
+    line-height: 1;
+    background: #888888;
+    border: 1px solid #a1a1a1;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    box-shadow: 1px 1px 0 #fff;
+    -webkit-box-shadow: 1px 1px 0 #fff;
+    -moz-box-shadow: 1px 1px 0 #fff;
+}
+.button-reset:active, .button-back:active {
+    position: relative;
+    top: 1px;
+}
+.button-pay {
+    padding: 10px 22px;
+    line-height: 1;
+    background: #cc2b28;
+    border: 1px solid #CC2619;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    box-shadow: 1px 1px 0 #fff;
+    -webkit-box-shadow: 1px 1px 0 #fff;
+    -moz-box-shadow: 1px 1px 0 #fff;
+}
+.button-pay:active {
+    position: relative;
+    top: 1px;
+}
+.footer {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.logo_cards {
+    float: left;
+    padding-top: 15px;
+    padding-left: 20px;
+    width: 575px;
+    height: 77px;
+    border: 1px solid #b1e8fa;
+}
+.logo_cards img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo_kazkom {
+    float: right;
+}
+.button-next {
+    width: 183px;
+    height: 55px;
+}
