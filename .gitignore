@@ -1,5 +1,6 @@
 assets/*
 !assets/.gitignore
+
 .htaccess
 /config.php
 admin/config.php
@@ -22,7 +23,6 @@ vqmod/logs/*
 vqmod/vqcache/*
 vqmod/checked.cache
 vqmod/mods.cache
-
 # myProjects settings
 *.code-workspace
 *.zip
