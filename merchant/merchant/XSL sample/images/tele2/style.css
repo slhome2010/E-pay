@@ -1,0 +1,25 @@
+body {
+    padding: 0px 0px 0px 0px;
+	background: url("/images/tele2/back_grad.png") repeat-x 0 100% black;
+	color: White;
+	font-family:Arial;
+	font-size:14px;
+}
+
+a{ color:#FFFFFF;}
+
+.td {
+	padding: 10px 10px 10px 10px;
+}
+
+.input {
+	background: url("/images/tele2/back_input.png") repeat;
+	color:#666666;
+}
+	
+.button {
+	height: 31px;
+	width: 100px;	
+	background: url("/images/tele2/button.gif");
+	border:none;
+}
