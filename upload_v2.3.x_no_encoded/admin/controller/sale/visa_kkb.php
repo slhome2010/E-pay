@@ -189,7 +189,7 @@ class ControllerSaleVisaKkb extends Controller {
                             );
                             $this->model_sale_visa_kkb->addOrderHistory($visa['order_id'], $history);
                         } else {
-                            $this->error['warning'] = "Connection error";
+                            $this->error['warning'] = "Epay server connection error";
                         }
                     } else {
                         $this->error['warning'] = "System error";
@@ -200,9 +200,9 @@ class ControllerSaleVisaKkb extends Controller {
 
         // выдача данных для jquery обновление страницы
         $this->language->load('sale/visa_kkb');
-        $order_status = $this->model_localisation_order_status->getOrderStatus($visa['transaction_status']);
+        $order_status = isset($visa['transaction_status']) ? $this->model_localisation_order_status->getOrderStatus($visa['transaction_status']) : 0;
         echo json_encode(array('warning' => ($this->error) ? $this->error['warning'] : FALSE, 'success' => (!$this->error) ? $this->language->get('text_success') : FALSE,
-            'status' => isset($visa['transaction_status']) ? $order_status['name'] : '',
+            'status' => $order_status ? $order_status['name'] : 'Ошибка статуса',
                 //  'reference' => isset($visa['customer_reference']) ? $visa['customer_reference'] : ''
         ));
     }
@@ -284,7 +284,7 @@ class ControllerSaleVisaKkb extends Controller {
                             );
                             $this->model_sale_visa_kkb->addOrderHistory($visa['order_id'], $history);
                         } else {
-                            $this->error['warning'] = "Connection error";
+                            $this->error['warning'] = "Epay server connection error";
                         }
                     } else {
                         $this->error['warning'] = "System error";
@@ -295,9 +295,9 @@ class ControllerSaleVisaKkb extends Controller {
 
         // выдача данных для jquery обновление страницы
         $this->language->load('sale/visa_kkb');
-        $order_status = $this->model_localisation_order_status->getOrderStatus($visa['transaction_status']);
+        $order_status = isset($visa['transaction_status']) ? $this->model_localisation_order_status->getOrderStatus($visa['transaction_status']) : 0;
         echo json_encode(array('warning' => ($this->error) ? $this->error['warning'] : FALSE, 'success' => (!$this->error) ? $this->language->get('text_success') : FALSE,
-            'status' => isset($visa['transaction_status']) ? $order_status['name'] : '',
+            'status' => $order_status ? $order_status['name'] : 'Ошибка статуса',
                 //  'reference' => isset($visa['customer_reference']) ? $visa['customer_reference'] : ''
         ));
     }
@@ -375,7 +375,7 @@ class ControllerSaleVisaKkb extends Controller {
                             );
                             $this->model_sale_visa_kkb->addOrderHistory($visa['order_id'], $history);
                         } else {
-                            $this->error['warning'] = "Connection error";
+                            $this->error['warning'] = "Epay server connection error";
                         }
                     } else {
                         $this->error['warning'] = "System error";
@@ -386,9 +386,9 @@ class ControllerSaleVisaKkb extends Controller {
 
         // выдача данных для jquery обновление страницы
         $this->language->load('sale/visa_kkb');
-        $order_status = $this->model_localisation_order_status->getOrderStatus($visa['transaction_status']);
+        $order_status = isset($visa['transaction_status']) ? $this->model_localisation_order_status->getOrderStatus($visa['transaction_status']) : 0;
         echo json_encode(array('warning' => ($this->error) ? $this->error['warning'] : FALSE, 'success' => (!$this->error) ? $this->language->get('text_success') : FALSE,
-            'status' => isset($visa['transaction_status']) ? $order_status['name'] : '',
+            'status' => $order_status ? $order_status['name'] : 'Ошибка статуса',
                 //  'reference' => isset($visa['customer_reference']) ? $visa['customer_reference'] : ''
         ));
     }
