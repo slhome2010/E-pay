@@ -97,7 +97,7 @@ class ControllerSaleVisaKkb extends Controller {
          } else {
             $data['authorized_status'] = '';
          }
-        $data['authorized_status'] = $authorized_status['name'];
+        //$data['authorized_status'] = $authorized_status['name'];
         $data['header'] = $this->load->controller('common/header');
         $data['column_left'] = $this->load->controller('common/column_left');
         $data['footer'] = $this->load->controller('common/footer');
