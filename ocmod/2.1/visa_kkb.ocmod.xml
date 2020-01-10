@@ -9,7 +9,7 @@
                 
                 <operation>                
                         <search><![CDATA[// Text]]></search>                        
-                        <add position="after"><![CDATA[$_['text_visa_kkb']                		   = 'Visa Kazkom';]]></add>                        
+                        <add position="after"><![CDATA[$_['text_visa_kkb']                		   = 'Visa E-pay';]]></add>                        
                 </operation>                
          
         </file>

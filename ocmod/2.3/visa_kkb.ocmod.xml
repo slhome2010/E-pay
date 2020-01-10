@@ -11,7 +11,7 @@
                     <add position="before"><![CDATA[
 					if ($this->user->hasPermission('access', 'sale/visa_kkb')) {
 						$sale[] = array(
-							'name'	   => 'Visa Kkb',
+							'name'	   => 'Visa E-pay',
 							'href'     => $this->url->link('sale/visa_kkb', 'token=' . $this->session->data['token'], true),
 							'children' => array()		
 						);	
