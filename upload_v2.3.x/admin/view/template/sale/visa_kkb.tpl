@@ -91,9 +91,12 @@ var token = '<?php echo $token; ?>';
             data: '&visa_id=' + idd,
             url: 'index.php?route=sale/visa_kkb/refresh&token=' + token,
             success: function (message) {
-                document.all.s.rows[row].cells[3].innerHTML = message['status'];
-                window.location.reload(true);
-                creatMessage(message);
+                if (message['success']) {
+                     window.location.reload(true);
+                } else { 
+                    document.all.s.rows[row].cells[3].innerHTML = message['status'];                
+                    creatMessage(message);
+                }                
             }
         });
     }
@@ -114,9 +117,12 @@ var token = '<?php echo $token; ?>';
             data: '&visa_id=' + id,
             url: 'index.php?route=sale/visa_kkb/confirm&token=' + token,
             success: function (message) {
-                document.all.s.rows[row].cells[3].innerHTML = message['status'];
-                window.location.reload(true);
-                creatMessage(message);
+                if (message['success']) {
+                     window.location.reload(true);
+                } else { 
+                    document.all.s.rows[row].cells[3].innerHTML = message['status'];                
+                    creatMessage(message);
+                }                
             }
         });
     }
@@ -137,9 +143,12 @@ var token = '<?php echo $token; ?>';
             data: '&visa_id=' + id,
             url: 'index.php?route=sale/visa_kkb/cancel&token=' + token,
             success: function (message) {
-                document.all.s.rows[row].cells[3].innerHTML = message['status'];
-                window.location.reload(true);
-                creatMessage(message);
+                if (message['success']) {
+                     window.location.reload(true);
+                } else { 
+                    document.all.s.rows[row].cells[3].innerHTML = message['status'];                
+                    creatMessage(message);
+                }                
             }
         });
     }
@@ -155,7 +164,7 @@ var token = '<?php echo $token; ?>';
             //	$('#message').removeClass('success').addClass('warning').html(message['warning']);
         }
 
-        $('.alert').delay(3500).slideUp(600).fadeOut(2500);
+        $('.alert').delay(4500).slideUp(600).fadeOut(2500);
     }
 //--></script>
 <?php echo $footer; ?>

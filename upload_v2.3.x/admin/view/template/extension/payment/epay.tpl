@@ -9,7 +9,7 @@
             <h1><img src="view/image/payment.png" alt="" /> <?php echo $heading_title; ?></h1>
             <ul class="breadcrumb">
                 <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-                    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+                <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
                 <?php } ?>
             </ul>
         </div>
@@ -17,9 +17,9 @@
 
     <div class="container-fluid">
         <?php if ($error_warning) { ?>
-            <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?>
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-            </div>
+        <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?>
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+        </div>
         <?php } ?>
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -66,12 +66,12 @@
                                     <div class="col-sm-10">
                                         <select name="epay_check_status_id" id="input-check_status" class="form-control">
                                             <?php foreach ($check_statuses as $check_status) { ?>
-                                                <?php if ($check_status['order_status_id'] == $epay_check_status_id) { ?>
-                                                    <option value="<?php echo $check_status['order_status_id']; ?>" selected="selected"><?php echo $check_status['name']; ?></option>
-    <?php } else { ?>
-                                                    <option value="<?php echo $check_status['order_status_id']; ?>"><?php echo $check_status['name']; ?></option>
-    <?php } ?>
-<?php } ?>
+                                            <?php if ($check_status['order_status_id'] == $epay_check_status_id) { ?>
+                                            <option value="<?php echo $check_status['order_status_id']; ?>" selected="selected"><?php echo $check_status['name']; ?></option>
+                                            <?php } else { ?>
+                                            <option value="<?php echo $check_status['order_status_id']; ?>"><?php echo $check_status['name']; ?></option>
+                                            <?php } ?>
+                                            <?php } ?>
                                         </select>
                                     </div>
                                 </div>
@@ -80,12 +80,12 @@
                                     <div class="col-sm-10">
                                         <select name="epay_declined_status_id" id="input-declined_status" class="form-control">
                                             <?php foreach ($declined_statuses as $declined_status) { ?>
-                                                <?php if ($declined_status['order_status_id'] == $epay_declined_status_id) { ?>
-                                                    <option value="<?php echo $declined_status['order_status_id']; ?>" selected="selected"><?php echo $declined_status['name']; ?></option>
-    <?php } else { ?>
-                                                    <option value="<?php echo $declined_status['order_status_id']; ?>"><?php echo $declined_status['name']; ?></option>
-    <?php } ?>
-<?php } ?>
+                                            <?php if ($declined_status['order_status_id'] == $epay_declined_status_id) { ?>
+                                            <option value="<?php echo $declined_status['order_status_id']; ?>" selected="selected"><?php echo $declined_status['name']; ?></option>
+                                            <?php } else { ?>
+                                            <option value="<?php echo $declined_status['order_status_id']; ?>"><?php echo $declined_status['name']; ?></option>
+                                            <?php } ?>
+                                            <?php } ?>
                                         </select>
                                     </div>
                                 </div>
@@ -94,12 +94,12 @@
                                     <div class="col-sm-10">
                                         <select name="epay_error_status_id" id="input-error_status" class="form-control">
                                             <?php foreach ($error_statuses as $error_status) { ?>
-                                                <?php if ($error_status['order_status_id'] == $epay_error_status_id) { ?>
-                                                    <option value="<?php echo $error_status['order_status_id']; ?>" selected="selected"><?php echo $error_status['name']; ?></option>
-    <?php } else { ?>
-                                                    <option value="<?php echo $error_status['order_status_id']; ?>"><?php echo $error_status['name']; ?></option>
-    <?php } ?>
-<?php } ?>
+                                            <?php if ($error_status['order_status_id'] == $epay_error_status_id) { ?>
+                                            <option value="<?php echo $error_status['order_status_id']; ?>" selected="selected"><?php echo $error_status['name']; ?></option>
+                                            <?php } else { ?>
+                                            <option value="<?php echo $error_status['order_status_id']; ?>"><?php echo $error_status['name']; ?></option>
+                                            <?php } ?>
+                                            <?php } ?>
                                         </select>
                                     </div>
                                 </div>
@@ -108,12 +108,12 @@
                                     <div class="col-sm-10">
                                         <select name="epay_canceled_status_id" id="input-canceled_status" class="form-control">
                                             <?php foreach ($canceled_statuses as $canceled_status) { ?>
-                                                <?php if ($canceled_status['order_status_id'] == $epay_canceled_status_id) { ?>
-                                                    <option value="<?php echo $canceled_status['order_status_id']; ?>" selected="selected"><?php echo $canceled_status['name']; ?></option>
-    <?php } else { ?>
-                                                    <option value="<?php echo $canceled_status['order_status_id']; ?>"><?php echo $canceled_status['name']; ?></option>
-    <?php } ?>
-<?php } ?>
+                                            <?php if ($canceled_status['order_status_id'] == $epay_canceled_status_id) { ?>
+                                            <option value="<?php echo $canceled_status['order_status_id']; ?>" selected="selected"><?php echo $canceled_status['name']; ?></option>
+                                            <?php } else { ?>
+                                            <option value="<?php echo $canceled_status['order_status_id']; ?>"><?php echo $canceled_status['name']; ?></option>
+                                            <?php } ?>
+                                            <?php } ?>
                                         </select>
                                     </div>
                                 </div>
@@ -122,12 +122,12 @@
                                     <div class="col-sm-10">
                                         <select name="epay_order_status_id" id="input-order_status" class="form-control">
                                             <?php foreach ($order_statuses as $order_status) { ?>
-                                                <?php if ($order_status['order_status_id'] == $epay_order_status_id) { ?>
-                                                    <option value="<?php echo $order_status['order_status_id']; ?>" selected="selected"><?php echo $order_status['name']; ?></option>
-    <?php } else { ?>
-                                                    <option value="<?php echo $order_status['order_status_id']; ?>"><?php echo $order_status['name']; ?></option>
-    <?php } ?>
-<?php } ?>
+                                            <?php if ($order_status['order_status_id'] == $epay_order_status_id) { ?>
+                                            <option value="<?php echo $order_status['order_status_id']; ?>" selected="selected"><?php echo $order_status['name']; ?></option>
+                                            <?php } else { ?>
+                                            <option value="<?php echo $order_status['order_status_id']; ?>"><?php echo $order_status['name']; ?></option>
+                                            <?php } ?>
+                                            <?php } ?>
                                         </select>
                                     </div>
                                 </div>
@@ -143,16 +143,16 @@
                                         <select name="epay_geo_zone_id" id="input-geo_zone" class="form-control">
                                             <option value="0"><?php echo $text_all_zones; ?></option>
                                             <?php foreach ($geo_zones as $geo_zone) { ?>
-                                                <?php if ($geo_zone['geo_zone_id'] == $epay_geo_zone_id) { ?>
-                                                    <option value="<?php echo $geo_zone['geo_zone_id']; ?>" selected="selected"><?php echo $geo_zone['name']; ?></option>
-    <?php } else { ?>
-                                                    <option value="<?php echo $geo_zone['geo_zone_id']; ?>"><?php echo $geo_zone['name']; ?></option>
-    <?php } ?>
-<?php } ?>
+                                            <?php if ($geo_zone['geo_zone_id'] == $epay_geo_zone_id) { ?>
+                                            <option value="<?php echo $geo_zone['geo_zone_id']; ?>" selected="selected"><?php echo $geo_zone['name']; ?></option>
+                                            <?php } else { ?>
+                                            <option value="<?php echo $geo_zone['geo_zone_id']; ?>"><?php echo $geo_zone['name']; ?></option>
+                                            <?php } ?>
+                                            <?php } ?>
                                         </select>
                                     </div>
                                 </div>
-								<div class="form-group">
+                                <div class="form-group">
                                     <label class="col-sm-2 control-label" for="input-order-prefix">Префикс для тестовых заказов</label>
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_order_prefix" value="<?php echo $epay_order_prefix; ?>" placeholder="Дополнить номер заказа слева" id="input-order-prefix" class="form-control" />
@@ -162,13 +162,13 @@
                                     <label class="col-sm-2 control-label" for="input-status"><?php echo $entry_status; ?></label>
                                     <div class="col-sm-10">
                                         <select name="epay_status" id="input-status" class="form-control">
-<?php if ($epay_status) { ?>
-                                                <option value="1" selected="selected"><?php echo $text_enabled; ?></option>
-                                                <option value="0"><?php echo $text_disabled; ?></option>
-<?php } else { ?>
-                                                <option value="1"><?php echo $text_enabled; ?></option>
-                                                <option value="0" selected="selected"><?php echo $text_disabled; ?></option>
-<?php } ?>
+                                            <?php if ($epay_status) { ?>
+                                            <option value="1" selected="selected"><?php echo $text_enabled; ?></option>
+                                            <option value="0"><?php echo $text_disabled; ?></option>
+                                            <?php } else { ?>
+                                            <option value="1"><?php echo $text_enabled; ?></option>
+                                            <option value="0" selected="selected"><?php echo $text_disabled; ?></option>
+                                            <?php } ?>
                                         </select>
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_merchant_id0" value="<?php echo $epay_merchant_id0; ?>" placeholder="<?php echo $entry_merchant_id; ?>" id="input-merchant_id0" class="form-control" />
                                         <?php if ($error_merchant_id0) { ?>
-                                            <div class="text-danger"><?php echo $error_merchant_id0 ?></div>
+                                        <div class="text-danger"><?php echo $error_merchant_id0 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -194,16 +194,17 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_merchant_name0" value="<?php echo $epay_merchant_name0; ?>" placeholder="<?php echo $entry_merchant_name; ?>" id="input-merchant_name0" class="form-control" />
                                         <?php if ($error_merchant_name0) { ?>
-                                            <div class="text-danger"><?php echo $error_merchant_name0 ?></div>
+                                        <div class="text-danger"><?php echo $error_merchant_name0 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
                                 <div class="form-group required">
                                     <label class="col-sm-2 control-label" for="input-merchant_certificate_id0"><?php echo $entry_merchant_certificate_id; ?></label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="epay_merchant_certificate_id0" value="<?php echo $epay_merchant_certificate_id0; ?>" placeholder="<?php echo $entry_merchant_certificate_id; ?>" id="input-merchant_certificate_id0" class="form-control" />
+                                        <input type="text" name="epay_merchant_certificate_id0" value="<?php echo $epay_merchant_certificate_id0; ?>" placeholder="<?php echo $entry_merchant_certificate_id; ?>"
+                                            id="input-merchant_certificate_id0" class="form-control" />
                                         <?php if ($error_merchant_certificate_id0) { ?>
-                                            <div class="text-danger"><?php echo $error_merchant_certificate_id0 ?></div>
+                                        <div class="text-danger"><?php echo $error_merchant_certificate_id0 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -212,16 +213,17 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_private_key_fn0" value="<?php echo $epay_private_key_fn0; ?>" placeholder="<?php echo $entry_private_key_fn; ?>" id="input-private_key_fn0" class="form-control" />
                                         <?php if ($error_private_key_fn0) { ?>
-                                            <div class="text-danger"><?php echo $error_private_key_fn0 ?></div>
+                                        <div class="text-danger"><?php echo $error_private_key_fn0 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
                                 <div class="form-group required">
                                     <label class="col-sm-2 control-label" for="input-private_key_pass0"><?php echo $entry_private_key_pass; ?></label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="epay_private_key_pass0" value="<?php echo $epay_private_key_pass0; ?>" placeholder="<?php echo $entry_private_key_pass; ?>" id="input-private_key_pass0" class="form-control" />
+                                        <input type="text" name="epay_private_key_pass0" value="<?php echo $epay_private_key_pass0; ?>" placeholder="<?php echo $entry_private_key_pass; ?>" id="input-private_key_pass0"
+                                            class="form-control" />
                                         <?php if ($error_private_key_pass0) { ?>
-                                            <div class="text-danger"><?php echo $error_private_key_pass0 ?></div>
+                                        <div class="text-danger"><?php echo $error_private_key_pass0 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -230,7 +232,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_public_key_fn0" value="<?php echo $epay_public_key_fn0; ?>" placeholder="<?php echo $entry_public_key_fn; ?>" id="input-public_key_fn0" class="form-control" />
                                         <?php if ($error_public_key_fn0) { ?>
-                                            <div class="text-danger"><?php echo $error_public_key_fn0 ?></div>
+                                        <div class="text-danger"><?php echo $error_public_key_fn0 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -239,7 +241,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_server_action0" value="<?php echo $epay_server_action0; ?>" placeholder="<?php echo $entry_server_action; ?>" id="input-server_action0" class="form-control" />
                                         <?php if ($error_server_action0) { ?>
-                                            <div class="text-danger"><?php echo $error_server_action0 ?></div>
+                                        <div class="text-danger"><?php echo $error_server_action0 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -248,7 +250,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_server_checking0" value="<?php echo $epay_server_checking0; ?>" placeholder="<?php echo $entry_server_checking; ?>" id="input-server_checking0" class="form-control" />
                                         <?php if ($error_server_checking0) { ?>
-                                            <div class="text-danger"><?php echo $error_server_checking0 ?></div>
+                                        <div class="text-danger"><?php echo $error_server_checking0 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -257,7 +259,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_server_control0" value="<?php echo $epay_server_control0; ?>" placeholder="<?php echo $entry_server_control; ?>" id="input-server_control0" class="form-control" />
                                         <?php if ($error_server_control0) { ?>
-                                            <div class="text-danger"><?php echo $error_server_control0 ?></div>
+                                        <div class="text-danger"><?php echo $error_server_control0 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -268,7 +270,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_merchant_id1" value="<?php echo $epay_merchant_id1; ?>" placeholder="<?php echo $entry_merchant_id; ?>" id="input-merchant_id1" class="form-control" />
                                         <?php if ($error_merchant_id1) { ?>
-                                            <div class="text-danger"><?php echo $error_merchant_id1 ?></div>
+                                        <div class="text-danger"><?php echo $error_merchant_id1 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -277,16 +279,17 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_merchant_name1" value="<?php echo $epay_merchant_name1; ?>" placeholder="<?php echo $entry_merchant_name; ?>" id="input-merchant_name1" class="form-control" />
                                         <?php if ($error_merchant_name1) { ?>
-                                            <div class="text-danger"><?php echo $error_merchant_name1 ?></div>
+                                        <div class="text-danger"><?php echo $error_merchant_name1 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
                                 <div class="form-group required">
                                     <label class="col-sm-2 control-label" for="input-merchant_certificate_id1"><?php echo $entry_merchant_certificate_id; ?></label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="epay_merchant_certificate_id1" value="<?php echo $epay_merchant_certificate_id1; ?>" placeholder="<?php echo $entry_merchant_certificate_id; ?>" id="input-merchant_certificate_id1" class="form-control" />
+                                        <input type="text" name="epay_merchant_certificate_id1" value="<?php echo $epay_merchant_certificate_id1; ?>" placeholder="<?php echo $entry_merchant_certificate_id; ?>"
+                                            id="input-merchant_certificate_id1" class="form-control" />
                                         <?php if ($error_merchant_certificate_id1) { ?>
-                                            <div class="text-danger"><?php echo $error_merchant_certificate_id1 ?></div>
+                                        <div class="text-danger"><?php echo $error_merchant_certificate_id1 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -295,16 +298,17 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_private_key_fn1" value="<?php echo $epay_private_key_fn1; ?>" placeholder="<?php echo $entry_private_key_fn; ?>" id="input-private_key_fn1" class="form-control" />
                                         <?php if ($error_private_key_fn1) { ?>
-                                            <div class="text-danger"><?php echo $error_private_key_fn1 ?></div>
+                                        <div class="text-danger"><?php echo $error_private_key_fn1 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
                                 <div class="form-group required">
                                     <label class="col-sm-2 control-label" for="input-private_key_pass1"><?php echo $entry_private_key_pass; ?></label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="epay_private_key_pass1" value="<?php echo $epay_private_key_pass1; ?>" placeholder="<?php echo $entry_private_key_pass; ?>" id="input-private_key_pass1" class="form-control" />
+                                        <input type="text" name="epay_private_key_pass1" value="<?php echo $epay_private_key_pass1; ?>" placeholder="<?php echo $entry_private_key_pass; ?>" id="input-private_key_pass1"
+                                            class="form-control" />
                                         <?php if ($error_private_key_pass1) { ?>
-                                            <div class="text-danger"><?php echo $error_private_key_pass1 ?></div>
+                                        <div class="text-danger"><?php echo $error_private_key_pass1 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -313,7 +317,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_public_key_fn1" value="<?php echo $epay_public_key_fn1; ?>" placeholder="<?php echo $entry_public_key_fn; ?>" id="input-public_key_fn1" class="form-control" />
                                         <?php if ($error_public_key_fn1) { ?>
-                                            <div class="text-danger"><?php echo $error_public_key_fn1 ?></div>
+                                        <div class="text-danger"><?php echo $error_public_key_fn1 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -322,7 +326,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_server_action1" value="<?php echo $epay_server_action1; ?>" placeholder="<?php echo $entry_server_action; ?>" id="input-server_action1" class="form-control" />
                                         <?php if ($error_server_action1) { ?>
-                                            <div class="text-danger"><?php echo $error_server_action1 ?></div>
+                                        <div class="text-danger"><?php echo $error_server_action1 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -331,7 +335,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_server_checking1" value="<?php echo $epay_server_checking1; ?>" placeholder="<?php echo $entry_server_checking; ?>" id="input-server_checking1" class="form-control" />
                                         <?php if ($error_server_checking1) { ?>
-                                            <div class="text-danger"><?php echo $error_server_checking1 ?></div>
+                                        <div class="text-danger"><?php echo $error_server_checking1 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -340,7 +344,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" name="epay_server_control1" value="<?php echo $epay_server_control1; ?>" placeholder="<?php echo $entry_server_control; ?>" id="input-server_control1" class="form-control" />
                                         <?php if ($error_server_control1) { ?>
-                                            <div class="text-danger"><?php echo $error_server_control1 ?></div>
+                                        <div class="text-danger"><?php echo $error_server_control1 ?></div>
                                         <?php } ?>
                                     </div>
                                 </div>
@@ -349,9 +353,9 @@
                                 <fieldset>
                                     <legend>Служба поддержки</legend>
                                     <address>
-                                        По всем вопросам, связаннымы с работой модуля обращайтесь:<br/>
-                                        <i class="fa fa-skype"></i> sl271261414<br/>
-                                        <strong>E-mail:</strong> <a href="mailto:#">comtronics@mail.ru</a><br/>
+                                        По всем вопросам, связаннымы с работой модуля обращайтесь:<br />
+                                        <i class="fa fa-skype"></i> sl271261414<br />
+                                        <strong>E-mail:</strong> <a href="mailto:#">comtronics@mail.ru</a><br />
                                         <strong>Сайт-демо:</strong> <a href="http://demo.radiocity.kz">demo.radiocity.kz</a>
                                     </address>
                                 </fieldset>
